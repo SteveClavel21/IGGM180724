@@ -1,76 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Practica HTML, CSS & JAVASCRIPT</title>
-<meta charset="utf-8"/>
+    <title>Práctica HTML, CSS & JAVASCRIPT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javasc.js"></script>
 </head>
+
 <body>
-    <div>
-        <div>
-            <label>Nombre</label>
-            <input type="text">
-
-            <label>Apellido</label> 
-            <input type="text">
+    <div class="container">
+        <div class="header">
+            <h2>Crear cliente</h2>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
         </div>
-       
-    </div>
-    <div >
-        <button>Buscar</button>
-    </div>
-    <table border="1" id="tbDatos">
-        <thead class="headTable">
-            <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                
-                
-                <th>Categoría</th>
-                <th>Complemento</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ingrid</td>
-                <td>Gabriel</td>
-               
-                <td rowspan="3">Gerentes</td>
-                <td><table >
-                    <thead  class="headAcciones">
-                        <tr>
-                            <th>E</th>
-                            <th>D</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>E</td>
-                            <td>D</td>
-                        </tr>
-                    </tbody>
-                </table></td>
-            </tr>
-            <tr>
-                <td>German</td>
-                <td>Clavel</td>
-               
-                <td><table>
-                    <thead  class="headAcciones">
-                        <tr>
-                            <th>E</th>
-                            <th>D</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>C</td>
-                            <td>D</td>
-                        </tr>
-                    </tbody>
-                </table></td>
-            </tr>
-            
-        </tbody>
 
-    </table>
+        <div class="search-form">
+            <div class="input-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Nombre" value="Marvin">
+                <button type="button">Buscar</button>
+            </div>
+            <div class="input-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" placeholder="Apellido">
+            </div>
+        </div>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Categoría</th>
+                    <th class="actions-header">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Marvin</td>
+                    <td>Barrera</td>
+                    <td rowspan="2">Gerentes</td>
+                    <td class="actions-cell"><button class="edit">E</button> <button class="delete">D</button></td>
+                </tr>
+                <tr>
+                    <td>Mateo</td>
+                    <td>Rivas</td>
+                    <td class="actions-cell"><button class="edit">E</button> <button class="delete">D</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
+
+</html>
