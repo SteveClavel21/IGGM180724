@@ -1,0 +1,155 @@
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    /* Fondo blanco */
+    color: #000000;
+    /* Texto negro */
+}
+
+.container {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    /* Fondo blanco para el contenido */
+    border: 10px solid gray;
+    /* Borde azul */
+    border-radius: 8px;
+}
+
+
+/* Encabezado */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    /* Línea divisoria gris claro */
+}
+
+.header h2 {
+    margin: 0;
+}
+
+
+/* Puntos del encabezado (decoración) */
+
+.dots {
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: blue;
+    /* Puntos gris oscuro */
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+/* Formulario de búsqueda */
+
+.search-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.input-group label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #333;
+    /* Texto gris oscuro */
+}
+
+.input-group input[type="text"] {
+    width: 200px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #333;
+    /* Texto gris oscuro */
+}
+
+.input-group button {
+    margin-top: 20px;
+    background-color: #0f62fe;
+    /* Azul */
+    color: #ffffff;
+    width: 200px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Tabla */
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    /* Fondo blanco */
+}
+
+.data-table th,
+.data-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    /* Borde gris claro */
+}
+
+.data-table th {
+    background-color: #f0f0f0;
+    /* Fondo gris muy claro */
+    color: #333;
+    /* Texto gris oscuro */
+}
+
+.actions-header {
+    width: 120px;
+}
+
+.actions-cell {
+    justify-content: center;
+    text-align: center;
+}
+
+.edit,
+.delete {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    margin: 2px;
+    color: #ffffff;
+}
+
+.edit {
+    justify-content: center;
+    background-color: #28a745;
+    /* Verde */
+}
+
+.delete {
+    background-color: #dc3545;
+    /* Rojo */
+}
